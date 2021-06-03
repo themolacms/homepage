@@ -1,8 +1,18 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {
+  LocalstorageService,
+  AppService,
+  MetaService,
+  NavService,
+  SettingService,
+} from '@lamnhan/ngx-useful';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
+import { HeaderComponentModule } from './components/header/header.module';
+import { FooterComponentModule } from './components/footer/footer.module';
 
 @NgModule({
   declarations: [
@@ -10,9 +20,17 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HeaderComponentModule,
+    FooterComponentModule,
   ],
-  providers: [],
+  providers: [
+    LocalstorageService,
+    AppService,
+    MetaService,
+    NavService,
+    SettingService,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

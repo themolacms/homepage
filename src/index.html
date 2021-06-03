@@ -1,13 +1,58 @@
 <!doctype html>
 <html lang="en">
 <head>
+  
+  <!-- Github Pages hack to allow SPA refresh without receiving 404. -->
+  <script>
+    (function () {
+      var redirect = sessionStorage.redirect;
+      delete sessionStorage.redirect;
+      if (redirect && redirect != location.href) {
+        history.replaceState(null, null, redirect);
+      }
+    })();
+  </script>
+
   <meta charset="utf-8">
-  <title>Homepage</title>
+  <title>MolaCMS: Create a Free Web App</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <!-- Temporary meta tags (use prerender later) -->
+  <meta name="description" content="A modern CMS for building web app">
+  <meta property="og:title" content="MolaCMS: Create a Free Web App">
+  <meta property="og:description" content="A modern CMS for building web app">
+  <meta property="og:image" content="https://mola.lamnhan.com/assets/images/featured.jpg">
+  <meta property="og:url" content="https://mola.lamnhan.com/">
+  <link rel="canonical" href="https://mola.lamnhan.com/">
+  <link rel="author" href="https://www.facebook.com/lamhiennhan">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@lam_hien_nhan">
+  <meta name="twitter:creator" content="@lam_hien_nhan">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="MolaCMS: Create a Free Web App">
+  <meta property="og:locale" content="en-US">
+  <meta property="fb:app_id" content="1234567890">
+  <meta itemprop="name" content="MolaCMS: Create a Free Web App">
+  <meta itemprop="description" content="A modern CMS for building web app">
+  <meta itemprop="image" content="https://mola.lamnhan.com/assets/images/featured.jpg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- In-app splash screen -->
+  <link rel="stylesheet" href="/assets/css/splash-screen.css">
+
 </head>
 <body>
+
   <app-root></app-root>
+
+  <div id="app-splash-screen">
+    <img src="/assets/images/logo.svg">
+  </div>
+
 </body>
 </html>

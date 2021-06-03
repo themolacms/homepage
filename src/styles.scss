@@ -1,1 +1,93 @@
 /* You can add global styles to this file, and also import other style files */
+
+/**
+ * ====================================================
+ * 3rd parties
+ * ====================================================
+ */
+
+// ...
+
+/**
+ * ====================================================
+ * Unistylus
+ * ====================================================
+ */
+
+// use light and dark theme
+@import '../../../../lamnhan/unistylus/projects/unistylus/src/scss/unistylus';
+
+:root,
+[data-theme=default],
+[data-theme=light]
+{
+  // fonts
+  --app-font-head: 'Georgia', 'Times New Roman', serif;
+  --app-font-body: 'Segoe UI', 'Ubuntu', sans-serif;
+  // colors
+  --app-color-primary: #117ac9;
+  --app-color-primary-rgb: 17,122,201;
+  --app-color-primary-contrast: #ffffff;
+  --app-color-primary-contrast-rgb: 255,255,255;
+  --app-color-primary-shade: #0f6bb1;
+  --app-color-primary-tint: #2987ce;
+  --app-color-secondary: #e38a40;
+  --app-color-secondary-rgb: 227,138,64;
+  --app-color-secondary-contrast: #000000;
+  --app-color-secondary-contrast-rgb: 0,0,0;
+  --app-color-secondary-shade: #c87938;
+  --app-color-secondary-tint: #e69653;
+  --app-color-tertiary: #aa5fe6;
+  --app-color-tertiary-rgb: 170,95,230;
+  --app-color-tertiary-contrast: #000000;
+  --app-color-tertiary-contrast-rgb: 0,0,0;
+  --app-color-tertiary-shade: #9654ca;
+  --app-color-tertiary-tint: #b36fe9;
+  --app-color-success: #007e65;
+  --app-color-success-rgb: 0,126,101;
+  --app-color-success-contrast: #ffffff;
+  --app-color-success-contrast-rgb: 255,255,255;
+  --app-color-success-shade: #006f59;
+  --app-color-success-tint: #1a8b74;
+  --app-color-warning: #e0bd56;
+  --app-color-warning-rgb: 224,189,86;
+  --app-color-warning-contrast: #000000;
+  --app-color-warning-contrast-rgb: 0,0,0;
+  --app-color-warning-shade: #c5a64c;
+  --app-color-warning-tint: #e3c467;
+  --app-color-danger: #d52c82;
+  --app-color-danger-rgb: 213,44,130;
+  --app-color-danger-contrast: #ffffff;
+  --app-color-danger-contrast-rgb: 255,255,255;
+  --app-color-danger-shade: #bb2772;
+  --app-color-danger-tint: #d9418f;
+  --app-color-dark: #043959;
+  --app-color-dark-rgb: 4,57,89;
+  --app-color-dark-contrast: #ffffff;
+  --app-color-dark-contrast-rgb: 255,255,255;
+  --app-color-dark-shade: #04324e;
+  --app-color-dark-tint: #1d4d6a;
+  --app-color-medium: #a1a6a9;
+  --app-color-medium-rgb: 161,166,169;
+  --app-color-medium-contrast: #000000;
+  --app-color-medium-contrast-rgb: 0,0,0;
+  --app-color-medium-shade: #8e9295;
+  --app-color-medium-tint: #aaafb2;
+  --app-color-light: #ffffff;
+  --app-color-light-rgb: 255,255,255;
+  --app-color-light-contrast: #000000;
+  --app-color-light-contrast-rgb: 0,0,0;
+  --app-color-light-shade: #e0e0e0;
+  --app-color-light-tint: #ffffff;
+}
+
+// register app styles
+@import './theming/app.module';
+
+/**
+ * ====================================================
+ * Global styles 
+ * ====================================================
+ */
+ 
+// ...
