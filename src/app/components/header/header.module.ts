@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterLinkDirectiveModule } from '@lamnhan/ngx-useful';
 
 import { HeaderComponent } from './header.component';
 
@@ -7,6 +8,7 @@ import { HeaderComponent } from './header.component';
   declarations: [HeaderComponent],
   imports: [
     CommonModule,
+    RouterLinkDirectiveModule,
   ],
   exports: [HeaderComponent]
 })

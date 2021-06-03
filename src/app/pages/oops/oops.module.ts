@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterLinkDirectiveModule } from '@lamnhan/ngx-useful';
 
 import { OopsRoutingModule } from './oops-routing.module';
 import { OopsComponent } from './oops.component';
@@ -11,6 +12,7 @@ import { OopsComponent } from './oops.component';
   ],
   imports: [
     CommonModule,
+    RouterLinkDirectiveModule,
     OopsRoutingModule
   ]
 })

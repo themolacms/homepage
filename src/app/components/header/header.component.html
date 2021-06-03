@@ -1,3 +1,27 @@
 <header class="host">
-  header
+
+  <div class="brand">
+    <a [usefulRouterLink]="[]">
+      <img src="/assets/images/logo.svg" alt="Mola CMS">
+      <h1>Mola CMS</h1>
+    </a>
+  </div>
+
+  <nav class="menu">
+    <ul>
+      <li><a [usefulRouterLink]="['docs']">Docs</a></li>
+      <li><a [usefulRouterLink]="['themes']">Themes</a></li>
+      <li><a href="https://lamnhan.com/hire" target="_blank">Hire</a></li>
+    </ul>
+  </nav>
+
+  <div class="more">
+    <a href="https://github.com/themolacms" target="_blank">Github</a>
+    <a [usefulRouterLink]="['docs']" class="button-outline-medium">Get Started</a>
+  </div>
+
+  <div class="toggler">
+    <button class="button-clear"><i class="icon icon-menu"></i></button>
+  </div>
+
 </header>
